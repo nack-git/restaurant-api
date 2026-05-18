@@ -45,6 +45,8 @@ app.get("/health", (req, res) => {
     res.send("OK");
 });
 
+app.use("/image", express.static("image"));
+
 // ==================================
 // GET MENUS
 // ==================================
